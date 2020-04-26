@@ -1,111 +1,183 @@
-[debug] [2020-04-24T23:21:16.882Z] ----------------------------------------------------------------------
-[debug] [2020-04-24T23:21:16.884Z] Command:       /usr/local/Cellar/node/13.13.0_1/bin/node /usr/local/bin/firebase serve --only functions
-[debug] [2020-04-24T23:21:16.884Z] CLI Version:   8.0.3
-[debug] [2020-04-24T23:21:16.885Z] Platform:      darwin
-[debug] [2020-04-24T23:21:16.885Z] Node Version:  v13.13.0
-[debug] [2020-04-24T23:21:16.886Z] Time:          Sat Apr 25 2020 07:21:16 GMT+0800 (Singapore Standard Time)
-[debug] [2020-04-24T23:21:16.886Z] ----------------------------------------------------------------------
-[debug] [2020-04-24T23:21:16.886Z] 
-[debug] [2020-04-24T23:21:16.898Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-24T23:21:16.899Z] > authorizing via signed-in user
-[debug] [2020-04-24T23:21:16.899Z] [iam] checking project databases-project-274715 for permissions ["firebase.projects.get"]
-[debug] [2020-04-24T23:21:16.902Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/databases-project-274715:testIamPermissions  
+[debug] [2020-04-26T20:19:40.769Z] ----------------------------------------------------------------------
+[debug] [2020-04-26T20:19:40.771Z] Command:       /usr/local/Cellar/node/13.13.0_1/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2020-04-26T20:19:40.772Z] CLI Version:   8.0.3
+[debug] [2020-04-26T20:19:40.772Z] Platform:      darwin
+[debug] [2020-04-26T20:19:40.772Z] Node Version:  v13.13.0
+[debug] [2020-04-26T20:19:40.773Z] Time:          Mon Apr 27 2020 04:19:40 GMT+0800 (Singapore Standard Time)
+[debug] [2020-04-26T20:19:40.773Z] ----------------------------------------------------------------------
+[debug] [2020-04-26T20:19:40.773Z] 
+[debug] [2020-04-26T20:19:40.785Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-26T20:19:40.786Z] > authorizing via signed-in user
+[debug] [2020-04-26T20:19:40.786Z] [iam] checking project databases-project-274715 for permissions ["firebase.projects.get"]
+[debug] [2020-04-26T20:19:40.789Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/databases-project-274715:testIamPermissions  
  {"permissions":["firebase.projects.get"]}
-[debug] [2020-04-24T23:21:18.299Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 24 Apr 2020 23:21:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1230","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-04-24T23:21:18.301Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/databases-project-274715  
+[debug] [2020-04-26T20:19:42.092Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 26 Apr 2020 20:19:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1219","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-26T20:19:42.094Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/databases-project-274715  
  
-[debug] [2020-04-24T23:21:18.779Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 24 Apr 2020 23:21:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-26T20:19:42.292Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 26 Apr 2020 20:19:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
 [warn] ⚠  Your requested "node" version "8" doesn't match your global version "13"
 [info] ✔  functions: functions emulator started at http://localhost:5000
 [info] i  functions: Watching "/Users/yifanlim/databases/functions" for Cloud Functions...
-[debug] [2020-04-24T23:21:18.818Z] [worker-pool] addWorker(~diagnostic~) 
-[debug] [2020-04-24T23:21:18.818Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
-[debug] [2020-04-24T23:21:18.818Z] [worker-pool] submitWork(triggerId=) 
-[debug] [2020-04-24T23:21:18.819Z] [worker-~diagnostic~-15132fe2-c056-487d-a6d7-661b1c4f00c8]: Assigning socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_44389.sock 
-[debug] [2020-04-24T23:21:18.820Z] [worker-~diagnostic~-15132fe2-c056-487d-a6d7-661b1c4f00c8]: BUSY 
-[debug] [2020-04-24T23:21:19.274Z] [runtime-status] [44389] Functions runtime initialized. {"cwd":"/Users/yifanlim/databases/functions","node_version":"13.13.0"} 
-[debug] [2020-04-24T23:21:19.276Z] [runtime-status] [44389] Disabled runtime features: undefined 
-[debug] [2020-04-24T23:21:19.281Z] [runtime-status] [44389] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-04-24T23:21:19.282Z] [runtime-status] [44389] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:19.284Z] [runtime-status] [44389] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-04-24T23:21:19.362Z] [runtime-status] [44389] Checked functions.config() {"config":{}} 
-[debug] [2020-04-24T23:21:19.363Z] [runtime-status] [44389] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:19.364Z] [runtime-status] [44389] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-04-24T23:21:19.364Z] [runtime-status] [44389] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:19.365Z] [runtime-status] [44389] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-26T20:19:42.327Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-26T20:19:42.327Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-26T20:19:42.327Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-26T20:19:42.328Z] [worker-~diagnostic~-e81ec229-2053-4466-a18d-c5af9eb8eb83]: Assigning socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_75350.sock 
+[debug] [2020-04-26T20:19:42.328Z] [worker-~diagnostic~-e81ec229-2053-4466-a18d-c5af9eb8eb83]: BUSY 
+[debug] [2020-04-26T20:19:42.693Z] [runtime-status] [75350] Functions runtime initialized. {"cwd":"/Users/yifanlim/databases/functions","node_version":"13.13.0"} 
+[debug] [2020-04-26T20:19:42.694Z] [runtime-status] [75350] Disabled runtime features: undefined 
+[debug] [2020-04-26T20:19:42.697Z] [runtime-status] [75350] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:19:42.699Z] [runtime-status] [75350] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:19:42.702Z] [runtime-status] [75350] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-26T20:19:42.758Z] [runtime-status] [75350] Checked functions.config() {"config":{}} 
+[debug] [2020-04-26T20:19:42.759Z] [runtime-status] [75350] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:19:42.760Z] [runtime-status] [75350] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:19:42.761Z] [runtime-status] [75350] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:19:42.761Z] [runtime-status] [75350] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"}} 
 [info] ✔  functions[createUniversityMember]: http function initialized (http://localhost:5000/databases-project-274715/us-central1/createUniversityMember).
-[info] ✔  functions[createHat]: http function initialized (http://localhost:5000/databases-project-274715/us-central1/createHat).
-[info] ✔  functions[createHippo]: http function initialized (http://localhost:5000/databases-project-274715/us-central1/createHippo).
-[info] ✔  functions[getHippos]: http function initialized (http://localhost:5000/databases-project-274715/us-central1/getHippos).
-[debug] [2020-04-24T23:21:20.047Z] [worker-~diagnostic~-15132fe2-c056-487d-a6d7-661b1c4f00c8]: IDLE 
-[debug] [2020-04-24T23:21:27.772Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-04-24T23:21:27.773Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-04-24T23:21:27.773Z] Accepted request POST /databases-project-274715/us-central1/createUniversityMember --> createUniversityMember
-[debug] [2020-04-24T23:21:27.780Z] [worker-pool] addWorker(createUniversityMember) 
-[debug] [2020-04-24T23:21:27.780Z] [worker-pool] Adding worker with key createUniversityMember, total=1 
-[debug] [2020-04-24T23:21:27.781Z] [worker-pool] submitWork(triggerId=createUniversityMember) 
-[debug] [2020-04-24T23:21:27.781Z] [worker-createUniversityMember-394afe0d-90d8-4b96-9a76-ea363ec5a457]: Assigning socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_44390.sock 
-[debug] [2020-04-24T23:21:27.781Z] [worker-createUniversityMember-394afe0d-90d8-4b96-9a76-ea363ec5a457]: BUSY 
-[debug] [2020-04-24T23:21:28.217Z] [runtime-status] [44390] Functions runtime initialized. {"cwd":"/Users/yifanlim/databases/functions","node_version":"13.13.0"} 
-[debug] [2020-04-24T23:21:28.220Z] [runtime-status] [44390] Disabled runtime features: undefined 
-[debug] [2020-04-24T23:21:28.222Z] [runtime-status] [44390] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-04-24T23:21:28.224Z] [runtime-status] [44390] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:28.228Z] [runtime-status] [44390] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-04-24T23:21:28.267Z] [runtime-status] [44390] Checked functions.config() {"config":{}} 
-[debug] [2020-04-24T23:21:28.268Z] [runtime-status] [44390] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:28.270Z] [runtime-status] [44390] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-04-24T23:21:28.270Z] [runtime-status] [44390] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:28.271Z] [runtime-status] [44390] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-04-24T23:21:28.699Z] [runtime-status] [44390] Trigger "createUniversityMember" has been found, beginning invocation! 
-[info] i  functions: Beginning execution of "createUniversityMember"
-[debug] [2020-04-24T23:21:28.700Z] [runtime-status] [44390] triggerDefinition {"httpsTrigger":{},"name":"createUniversityMember","entryPoint":"createUniversityMember"} 
-[debug] [2020-04-24T23:21:28.700Z] [runtime-status] [44390] Running createUniversityMember in mode HTTPS 
-[debug] [2020-04-24T23:21:28.706Z] [runtime-status] [44390] Attempting to listen to socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_44390.sock 
-[debug] [2020-04-24T23:21:28.712Z] [functions] Runtime ready! Sending request! 
-[debug] [2020-04-24T23:21:28.737Z] [runtime-status] [44390] Ephemeral server handling POST request 
-[debug] [2020-04-24T23:21:36.759Z] [runtime-status] [44390] Ephemeral server survived. 
-[warn] ⚠  functions: QueryFailedError: ER_BAD_NULL_ERROR: Column 'middleName' cannot be null
-    at new QueryFailedError (/Users/yifanlim/databases/functions/node_modules/typeorm/error/QueryFailedError.js:11:28)
-    at Query.<anonymous> (/Users/yifanlim/databases/functions/node_modules/typeorm/driver/mysql/MysqlQueryRunner.js:170:45)
-    at Query.<anonymous> (/Users/yifanlim/databases/functions/node_modules/mysql/lib/Connection.js:526:10)
-    at Query._callback (/Users/yifanlim/databases/functions/node_modules/mysql/lib/Connection.js:488:16)
-    at Query.Sequence.end (/Users/yifanlim/databases/functions/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
-    at Query.ErrorPacket (/Users/yifanlim/databases/functions/node_modules/mysql/lib/protocol/sequences/Query.js:92:8)
-    at Protocol._parsePacket (/Users/yifanlim/databases/functions/node_modules/mysql/lib/protocol/Protocol.js:291:23)
-    at Parser._parsePacket (/Users/yifanlim/databases/functions/node_modules/mysql/lib/protocol/Parser.js:433:10)
-    at Parser.write (/Users/yifanlim/databases/functions/node_modules/mysql/lib/protocol/Parser.js:43:10)
-    at Protocol.write (/Users/yifanlim/databases/functions/node_modules/mysql/lib/protocol/Protocol.js:38:16)
-[warn] ⚠  Your function was killed because it raised an unhandled error.
-[debug] [2020-04-24T23:21:36.775Z] [worker-createUniversityMember-394afe0d-90d8-4b96-9a76-ea363ec5a457]: exited 
-[debug] [2020-04-24T23:21:36.776Z] [worker-createUniversityMember-394afe0d-90d8-4b96-9a76-ea363ec5a457]: FINISHED 
-[debug] [2020-04-24T23:21:36.776Z] [work-queue] {"queueLength":0,"workRunningCount":0}
-[debug] [2020-04-24T23:21:54.677Z] [work-queue] {"queueLength":1,"workRunningCount":0}
-[debug] [2020-04-24T23:21:54.677Z] [work-queue] {"queueLength":0,"workRunningCount":1}
-[debug] [2020-04-24T23:21:54.678Z] Accepted request POST /databases-project-274715/us-central1/createUniversityMember --> createUniversityMember
-[debug] [2020-04-24T23:21:54.678Z] [worker-pool] Cleaned up workers for createUniversityMember: 1 --> 0 
-[debug] [2020-04-24T23:21:54.683Z] [worker-pool] addWorker(createUniversityMember) 
-[debug] [2020-04-24T23:21:54.684Z] [worker-pool] Adding worker with key createUniversityMember, total=1 
-[debug] [2020-04-24T23:21:54.684Z] [worker-pool] submitWork(triggerId=createUniversityMember) 
-[debug] [2020-04-24T23:21:54.685Z] [worker-createUniversityMember-056d6338-2d38-4563-be9a-e51ee0c70590]: Assigning socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_44392.sock 
-[debug] [2020-04-24T23:21:54.685Z] [worker-createUniversityMember-056d6338-2d38-4563-be9a-e51ee0c70590]: BUSY 
-[debug] [2020-04-24T23:21:55.028Z] [runtime-status] [44392] Functions runtime initialized. {"cwd":"/Users/yifanlim/databases/functions","node_version":"13.13.0"} 
-[debug] [2020-04-24T23:21:55.030Z] [runtime-status] [44392] Disabled runtime features: undefined 
-[debug] [2020-04-24T23:21:55.034Z] [runtime-status] [44392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-04-24T23:21:55.035Z] [runtime-status] [44392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:55.037Z] [runtime-status] [44392] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
-[debug] [2020-04-24T23:21:55.078Z] [runtime-status] [44392] Checked functions.config() {"config":{}} 
-[debug] [2020-04-24T23:21:55.079Z] [runtime-status] [44392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:55.081Z] [runtime-status] [44392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
-[debug] [2020-04-24T23:21:55.081Z] [runtime-status] [44392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
-[debug] [2020-04-24T23:21:55.081Z] [runtime-status] [44392] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"}} 
-[debug] [2020-04-24T23:21:55.501Z] [runtime-status] [44392] Trigger "createUniversityMember" has been found, beginning invocation! 
-[info] i  functions: Beginning execution of "createUniversityMember"
-[debug] [2020-04-24T23:21:55.502Z] [runtime-status] [44392] triggerDefinition {"httpsTrigger":{},"name":"createUniversityMember","entryPoint":"createUniversityMember"} 
-[debug] [2020-04-24T23:21:55.502Z] [runtime-status] [44392] Running createUniversityMember in mode HTTPS 
-[debug] [2020-04-24T23:21:55.508Z] [runtime-status] [44392] Attempting to listen to socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_44392.sock 
-[debug] [2020-04-24T23:21:55.513Z] [functions] Runtime ready! Sending request! 
-[debug] [2020-04-24T23:21:55.538Z] [runtime-status] [44392] Ephemeral server handling POST request 
-[debug] [2020-04-24T23:22:01.667Z] [runtime-status] [44392] Ephemeral server survived. 
-[info] i  functions: Finished "createUniversityMember" in ~6s
-[debug] [2020-04-24T23:22:01.668Z] [worker-createUniversityMember-056d6338-2d38-4563-be9a-e51ee0c70590]: IDLE 
-[debug] [2020-04-24T23:22:01.669Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] ✔  functions[getUniversityMember]: http function initialized (http://localhost:5000/databases-project-274715/us-central1/getUniversityMember).
+[info] ✔  functions[getLogin]: http function initialized (http://localhost:5000/databases-project-274715/us-central1/getLogin).
+[info] ✔  functions[getHasTaken]: http function initialized (http://localhost:5000/databases-project-274715/us-central1/getHasTaken).
+[debug] [2020-04-26T20:19:43.366Z] [worker-~diagnostic~-e81ec229-2053-4466-a18d-c5af9eb8eb83]: IDLE 
+[debug] [2020-04-26T20:19:50.992Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-26T20:19:50.992Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-26T20:19:50.993Z] Accepted request POST /databases-project-274715/us-central1/getHasTaken --> getHasTaken
+[debug] [2020-04-26T20:19:51.002Z] [worker-pool] addWorker(getHasTaken) 
+[debug] [2020-04-26T20:19:51.003Z] [worker-pool] Adding worker with key getHasTaken, total=1 
+[debug] [2020-04-26T20:19:51.003Z] [worker-pool] submitWork(triggerId=getHasTaken) 
+[debug] [2020-04-26T20:19:51.003Z] [worker-getHasTaken-929842a5-1bab-4a2e-99e1-0c064b453936]: Assigning socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_75353.sock 
+[debug] [2020-04-26T20:19:51.003Z] [worker-getHasTaken-929842a5-1bab-4a2e-99e1-0c064b453936]: BUSY 
+[debug] [2020-04-26T20:19:51.403Z] [runtime-status] [75353] Functions runtime initialized. {"cwd":"/Users/yifanlim/databases/functions","node_version":"13.13.0"} 
+[debug] [2020-04-26T20:19:51.404Z] [runtime-status] [75353] Disabled runtime features: undefined 
+[debug] [2020-04-26T20:19:51.409Z] [runtime-status] [75353] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:19:51.411Z] [runtime-status] [75353] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:19:51.413Z] [runtime-status] [75353] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-26T20:19:51.454Z] [runtime-status] [75353] Checked functions.config() {"config":{}} 
+[debug] [2020-04-26T20:19:51.455Z] [runtime-status] [75353] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:19:51.459Z] [runtime-status] [75353] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:19:51.460Z] [runtime-status] [75353] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:19:51.460Z] [runtime-status] [75353] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-26T20:19:51.865Z] [runtime-status] [75353] Trigger "getHasTaken" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getHasTaken"
+[debug] [2020-04-26T20:19:51.865Z] [runtime-status] [75353] triggerDefinition {"httpsTrigger":{},"name":"getHasTaken","entryPoint":"getHasTaken"} 
+[debug] [2020-04-26T20:19:51.865Z] [runtime-status] [75353] Running getHasTaken in mode HTTPS 
+[debug] [2020-04-26T20:19:51.866Z] [runtime-status] [75353] Attempting to listen to socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_75353.sock 
+[debug] [2020-04-26T20:19:51.866Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-26T20:19:51.892Z] [runtime-status] [75353] Ephemeral server handling POST request 
+[debug] [2020-04-26T20:19:51.999Z] [runtime-status] [75353] Ephemeral server survived. 
+[info] i  functions: Finished "getHasTaken" in ~4s
+[debug] [2020-04-26T20:19:56.534Z] [worker-getHasTaken-929842a5-1bab-4a2e-99e1-0c064b453936]: IDLE 
+[debug] [2020-04-26T20:19:56.534Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-26T20:20:08.295Z] File /Users/yifanlim/databases/functions/src/config.ts changed, reloading triggers 
+[debug] [2020-04-26T20:20:09.301Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-26T20:20:09.301Z] [worker-~diagnostic~-e81ec229-2053-4466-a18d-c5af9eb8eb83]: FINISHING 
+[debug] [2020-04-26T20:20:09.302Z] [worker-pool] Shutting down IDLE worker (getHasTaken) 
+[debug] [2020-04-26T20:20:09.302Z] [worker-getHasTaken-929842a5-1bab-4a2e-99e1-0c064b453936]: FINISHING 
+[debug] [2020-04-26T20:20:09.320Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-26T20:20:09.321Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-26T20:20:09.321Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-26T20:20:09.321Z] [worker-~diagnostic~-a680df7e-e090-4d61-92e3-6002d48ff6cd]: Assigning socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_75377.sock 
+[debug] [2020-04-26T20:20:09.322Z] [worker-~diagnostic~-a680df7e-e090-4d61-92e3-6002d48ff6cd]: BUSY 
+[debug] [2020-04-26T20:20:09.325Z] [worker-~diagnostic~-e81ec229-2053-4466-a18d-c5af9eb8eb83]: exited 
+[debug] [2020-04-26T20:20:09.325Z] [worker-~diagnostic~-e81ec229-2053-4466-a18d-c5af9eb8eb83]: FINISHED 
+[debug] [2020-04-26T20:20:09.325Z] [worker-getHasTaken-929842a5-1bab-4a2e-99e1-0c064b453936]: exited 
+[debug] [2020-04-26T20:20:09.327Z] [worker-getHasTaken-929842a5-1bab-4a2e-99e1-0c064b453936]: FINISHED 
+[debug] [2020-04-26T20:20:09.741Z] [runtime-status] [75377] Functions runtime initialized. {"cwd":"/Users/yifanlim/databases/functions","node_version":"13.13.0"} 
+[debug] [2020-04-26T20:20:09.745Z] [runtime-status] [75377] Disabled runtime features: undefined 
+[debug] [2020-04-26T20:20:09.749Z] [runtime-status] [75377] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:20:09.752Z] [runtime-status] [75377] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:09.755Z] [runtime-status] [75377] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-26T20:20:09.796Z] [runtime-status] [75377] Checked functions.config() {"config":{}} 
+[debug] [2020-04-26T20:20:09.796Z] [runtime-status] [75377] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:09.797Z] [runtime-status] [75377] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:20:09.798Z] [runtime-status] [75377] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:09.798Z] [runtime-status] [75377] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-26T20:20:10.195Z] [worker-~diagnostic~-a680df7e-e090-4d61-92e3-6002d48ff6cd]: IDLE 
+[debug] [2020-04-26T20:20:22.467Z] File /Users/yifanlim/databases/functions/lib/config.js.map changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.467Z] File /Users/yifanlim/databases/functions/lib/config.js changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.468Z] File /Users/yifanlim/databases/functions/lib/entity/University_Member.js.map changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.468Z] File /Users/yifanlim/databases/functions/lib/entity/University_Member.js changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.468Z] File /Users/yifanlim/databases/functions/lib/entity/Account.js.map changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.469Z] File /Users/yifanlim/databases/functions/lib/entity/Account.js changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.469Z] File /Users/yifanlim/databases/functions/lib/entity/Has_Taken.js.map changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.469Z] File /Users/yifanlim/databases/functions/lib/entity/Has_Taken.js changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.469Z] File /Users/yifanlim/databases/functions/lib/index.js.map changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.469Z] File /Users/yifanlim/databases/functions/lib/index.js changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.470Z] File /Users/yifanlim/databases/functions/lib/entity/Hippo.js.map changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.470Z] File /Users/yifanlim/databases/functions/lib/entity/Hippo.js changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.470Z] File /Users/yifanlim/databases/functions/lib/entity/Hats.js.map changed, reloading triggers 
+[debug] [2020-04-26T20:20:22.470Z] File /Users/yifanlim/databases/functions/lib/entity/Hats.js changed, reloading triggers 
+[debug] [2020-04-26T20:20:23.471Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-26T20:20:23.471Z] [worker-~diagnostic~-a680df7e-e090-4d61-92e3-6002d48ff6cd]: FINISHING 
+[debug] [2020-04-26T20:20:23.472Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-26T20:20:23.472Z] [worker-pool] Cleaned up workers for getHasTaken: 1 --> 0 
+[debug] [2020-04-26T20:20:23.479Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-26T20:20:23.480Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-26T20:20:23.480Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-26T20:20:23.480Z] [worker-~diagnostic~-2c07beaf-59b7-42cc-a85f-16f1bcd1ebbb]: Assigning socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_75380.sock 
+[debug] [2020-04-26T20:20:23.480Z] [worker-~diagnostic~-2c07beaf-59b7-42cc-a85f-16f1bcd1ebbb]: BUSY 
+[debug] [2020-04-26T20:20:23.482Z] [worker-~diagnostic~-a680df7e-e090-4d61-92e3-6002d48ff6cd]: exited 
+[debug] [2020-04-26T20:20:23.482Z] [worker-~diagnostic~-a680df7e-e090-4d61-92e3-6002d48ff6cd]: FINISHED 
+[debug] [2020-04-26T20:20:23.960Z] [runtime-status] [75380] Functions runtime initialized. {"cwd":"/Users/yifanlim/databases/functions","node_version":"13.13.0"} 
+[debug] [2020-04-26T20:20:23.961Z] [runtime-status] [75380] Disabled runtime features: undefined 
+[debug] [2020-04-26T20:20:23.963Z] [runtime-status] [75380] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:20:23.965Z] [runtime-status] [75380] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:23.967Z] [runtime-status] [75380] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-26T20:20:24.015Z] [runtime-status] [75380] Checked functions.config() {"config":{}} 
+[debug] [2020-04-26T20:20:24.015Z] [runtime-status] [75380] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:24.016Z] [runtime-status] [75380] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:20:24.017Z] [runtime-status] [75380] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:24.017Z] [runtime-status] [75380] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-26T20:20:24.615Z] [worker-~diagnostic~-2c07beaf-59b7-42cc-a85f-16f1bcd1ebbb]: IDLE 
+[debug] [2020-04-26T20:20:27.482Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-26T20:20:27.483Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-26T20:20:27.483Z] Accepted request POST /databases-project-274715/us-central1/getHasTaken --> getHasTaken
+[debug] [2020-04-26T20:20:27.483Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-26T20:20:27.487Z] [worker-pool] addWorker(getHasTaken) 
+[debug] [2020-04-26T20:20:27.488Z] [worker-pool] Adding worker with key getHasTaken, total=1 
+[debug] [2020-04-26T20:20:27.488Z] [worker-pool] submitWork(triggerId=getHasTaken) 
+[debug] [2020-04-26T20:20:27.489Z] [worker-getHasTaken-c503bc23-34ad-425c-ae96-27a8cc9b36de]: Assigning socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_75386.sock 
+[debug] [2020-04-26T20:20:27.490Z] [worker-getHasTaken-c503bc23-34ad-425c-ae96-27a8cc9b36de]: BUSY 
+[debug] [2020-04-26T20:20:27.877Z] [runtime-status] [75386] Functions runtime initialized. {"cwd":"/Users/yifanlim/databases/functions","node_version":"13.13.0"} 
+[debug] [2020-04-26T20:20:27.879Z] [runtime-status] [75386] Disabled runtime features: undefined 
+[debug] [2020-04-26T20:20:27.882Z] [runtime-status] [75386] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:20:27.884Z] [runtime-status] [75386] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:27.886Z] [runtime-status] [75386] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-26T20:20:27.930Z] [runtime-status] [75386] Checked functions.config() {"config":{}} 
+[debug] [2020-04-26T20:20:27.931Z] [runtime-status] [75386] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:27.932Z] [runtime-status] [75386] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-26T20:20:27.933Z] [runtime-status] [75386] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-26T20:20:27.933Z] [runtime-status] [75386] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/yifanlim/databases/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-26T20:20:28.342Z] [runtime-status] [75386] Trigger "getHasTaken" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "getHasTaken"
+[debug] [2020-04-26T20:20:28.346Z] [runtime-status] [75386] triggerDefinition {"httpsTrigger":{},"name":"getHasTaken","entryPoint":"getHasTaken"} 
+[debug] [2020-04-26T20:20:28.347Z] [runtime-status] [75386] Running getHasTaken in mode HTTPS 
+[debug] [2020-04-26T20:20:28.352Z] [runtime-status] [75386] Attempting to listen to socketPath: /var/folders/3h/q7f4j7lx1q1g02zkdptyd8fh0000gn/T/fire_emu_75386.sock 
+[debug] [2020-04-26T20:20:28.356Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-26T20:20:28.380Z] [runtime-status] [75386] Ephemeral server handling POST request 
+[debug] [2020-04-26T20:20:28.498Z] [runtime-status] [75386] Ephemeral server survived. 
+[info] i  functions: Finished "getHasTaken" in ~4s
+[debug] [2020-04-26T20:20:33.091Z] [worker-getHasTaken-c503bc23-34ad-425c-ae96-27a8cc9b36de]: IDLE 
+[debug] [2020-04-26T20:20:33.092Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-26T20:21:08.909Z] ----------------------------------------------------------------------
+[debug] [2020-04-26T20:21:08.913Z] Command:       /usr/local/Cellar/node/13.13.0_1/bin/node /usr/local/bin/firebase deploy --only functions
+[debug] [2020-04-26T20:21:08.914Z] CLI Version:   8.0.3
+[debug] [2020-04-26T20:21:08.914Z] Platform:      darwin
+[debug] [2020-04-26T20:21:08.914Z] Node Version:  v13.13.0
+[debug] [2020-04-26T20:21:08.915Z] Time:          Mon Apr 27 2020 04:21:08 GMT+0800 (Singapore Standard Time)
+[debug] [2020-04-26T20:21:08.915Z] ----------------------------------------------------------------------
+[debug] [2020-04-26T20:21:08.915Z] 
+[debug] [2020-04-26T20:21:08.931Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-26T20:21:08.932Z] > authorizing via signed-in user
+[debug] [2020-04-26T20:21:08.933Z] [iam] checking project databases-project-274715 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-04-26T20:21:08.937Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/databases-project-274715:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2020-04-26T20:21:10.450Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 26 Apr 2020 20:21:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1231","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-26T20:21:10.462Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/databases-project-274715/serviceAccounts/databases-project-274715@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2020-04-26T20:21:12.612Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 26 Apr 2020 20:21:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'databases-project-274715'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build

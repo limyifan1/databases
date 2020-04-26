@@ -10,8 +10,8 @@ export const config: ConnectionOptions = {
     host: '127.0.0.1',
     port: 3306,
     username: 'admin', // review
-    // password: 'root', // review
-    database: 'development',
+    password: '123', // review
+    database: 'project1',
     synchronize: true,
     logging: false,
     entities: [
@@ -20,7 +20,7 @@ export const config: ConnectionOptions = {
 
     // Production Mode
     ...(prod && {
-        database: 'production',
+        database: 'project1',
         logging: false,
         // synchronize: false,
         extra: {

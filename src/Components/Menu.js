@@ -11,7 +11,7 @@ export class Menu extends React.Component {
         style={{ position: "fixed", width: "100%", zIndex: "9999" }}
       >
         <Navbar.Brand as={Link} to="/" style={{ color: "#B48300" }}>
-          Test{" "}
+          UniForum{" "}
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
@@ -23,6 +23,33 @@ export class Menu extends React.Component {
             style={{ color: "grey" }}
           >
             Home
+          </Nav.Link>
+          <Nav.Link
+            href="#"
+            as={Link}
+            to="/profile"
+            id="menu-link"
+            style={{ color: "grey" }}
+          >
+            Profile
+          </Nav.Link>
+          <Nav.Link
+            href="#"
+            as={Link}
+            to="/login"
+            id="menu-link"
+            style={{ color: "grey" }}
+          >
+            Login
+          </Nav.Link>
+          <Nav.Link
+            href="#"
+            as={Link}
+            to="/logout"
+            id="menu-link"
+            style={{ color: "grey" }}
+          >
+            Logout
           </Nav.Link>
         </Navbar.Collapse>
       </Navbar>
