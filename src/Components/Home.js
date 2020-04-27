@@ -32,7 +32,7 @@ export class Home extends React.Component {
 
   getData = async () => {
     let urls = [
-      "https://us-central1-databases-project-274715.cloudfunctions.net/getUniversityMember",
+      "https://us-central1-databases-project-274715.cloudfunctions.net/getProfessor",
     ];
     try {
       Promise.all(
@@ -43,7 +43,6 @@ export class Home extends React.Component {
             headers: {
               "Content-Type": "application/json",
             },
-            // body: JSON.stringify(string),
           })
             .then((response) => {
               return response.json();
@@ -57,9 +56,10 @@ export class Home extends React.Component {
         )
       ).then((data) => {
         this.setState({
-          all: data[0],
+          professors: data[0],
           retrieved: true,
         });
+        console.log(this.state.professors);
       });
     } catch (error) {
       return error;
@@ -68,17 +68,8 @@ export class Home extends React.Component {
 
   sendData = async (query) => {
     let urls = [
-      "https://us-central1-databases-project-274715.cloudfunctions.net/createUniversityMember",
+      "https://us-central1-databases-project-274715.cloudfunctions.net/addVotesOn",
     ];
-    console.log(query);
-    // query = {
-    //   computingID: "computingID3",
-    //   firstName: "firstname",
-    //   middleName: "middlename",
-    //   lastName: "lastname",
-    //   gender: "gender",
-    //   age: 1,
-    // }
     try {
       Promise.all(
         urls.map((url) =>
@@ -91,11 +82,9 @@ export class Home extends React.Component {
             body: JSON.stringify(query),
           })
             .then((response) => {
-              console.log(response);
               return response.json();
             })
             .then((data) => {
-              console.log(data);
               return data;
             })
             .catch((error) => {
@@ -110,19 +99,21 @@ export class Home extends React.Component {
       return error;
     }
   };
+
   handleSubmit = async (event) => {
     event.preventDefault();
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
     await this.sendData({
-      computingID: this.state.computingID,
-      firstName: this.state.firstname,
-      middleName: this.state.middlename,
-      lastName: this.state.lastname,
-      gender: this.state.gender,
-      age: this.state.age,
+      professorComputingID: name,
+      studentComputingID: this.state.computingID,
+      voteValue: this.state[name],
     });
   };
 
-  handleChange = (event) => {
+  handleChange = async (event) => {
+    event.preventDefault();
     const target = event.target;
     const value = target.value;
     const name = target.name;
@@ -130,19 +121,52 @@ export class Home extends React.Component {
   };
 
   render() {
-    let data = [];
-    if (this.state.all && this.state.all.length > 0) {
-      this.state.all.forEach((element) => {
-        data.push(element);
+    let professors = [];
+    if (this.state.professors && this.state.professors.length > 0) {
+      this.state.professors.forEach((element) => {
+        professors.push(element);
       });
     }
+
     let display = [];
 
-    data.forEach((d) => {
+    professors.forEach((d) => {
       display.push(
-        <div>
-          {d.computingID} {d.firstName} {d.middleName} {d.lastName} {d.gender}{" "}
-          {d.age}{" "}
+        <div class="row">
+          <div class="col" style={{ textAlign: "right" }}>
+            {" "}
+            <b>{d.computingID} </b>Score: {d.score} No. Votes: {d.numVotes}{" "}
+            Salary: {d.salary} Tenure: {d.tenure} Department:{d.dName}
+          </div>
+          <div class="col">
+            {" "}
+            <form class="form-inline">
+              <div class="d-flex justify-content-start">
+                {" "}
+                <input
+                  name={d.computingID}
+                  onChange={this.handleChange}
+                  type="text"
+                  value={this.state[d.computingID]}
+                  style={{ width: "50px" }}
+                />
+              </div>
+              <button
+                onClick={this.handleSubmit}
+                name={d.computingID}
+                class="btn"
+                type="submit"
+                style={{
+                  backgroundColor: "grey",
+                  width: "80px",
+                  color: "black",
+                  borderColor: "black",
+                }}
+              >
+                Vote
+              </button>
+            </form>
+          </div>
         </div>
       );
     });
@@ -154,127 +178,24 @@ export class Home extends React.Component {
       >
         {getSessionCookie().computingID ? (
           <div>
-            <Form onSubmit={this.handleSubmit.bind(this)}>
-              <div class="">
-                {" "}
-                <div
-                  class="card shadow"
-                  style={{ width: "100%", "margin-top": "10px" }}
-                >
-                  <div class="card-body">
-                    <h5 class="card-title create-title"> Form Submission</h5>
-                    <p class="card-text create-title">
-                      <div class="input-group">
-                        <input
-                          onChange={this.handleChange}
-                          value={this.state.computingID}
-                          type="text"
-                          class="form-control"
-                          name="computingID"
-                          placeholder="Computing ID"
-                          required
-                        ></input>
-                      </div>
-                    </p>
-                    <p class="d-flex justify-content-center"></p>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text create-title">
-                      <div class="input-group">
-                        <input
-                          onChange={this.handleChange}
-                          value={this.state.firstname}
-                          type="text"
-                          class="form-control"
-                          name="firstname"
-                          placeholder="First Name"
-                          required
-                        ></input>
-                      </div>
-                    </p>
-                    <p class="d-flex justify-content-center"></p>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text create-title">
-                      <div class="input-group">
-                        <input
-                          onChange={this.handleChange}
-                          value={this.state.middlename}
-                          type="text"
-                          class="form-control"
-                          name="middlename"
-                          placeholder="Middle Name"
-                          required
-                        ></input>
-                      </div>
-                    </p>
-                    <p class="d-flex justify-content-center"></p>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text create-title">
-                      <div class="input-group">
-                        <input
-                          onChange={this.handleChange}
-                          value={this.state.lastname}
-                          type="text"
-                          class="form-control"
-                          name="lastname"
-                          placeholder="Last Name"
-                          required
-                        ></input>
-                      </div>
-                    </p>
-                    <p class="d-flex justify-content-center"></p>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text create-title">
-                      <div class="input-group">
-                        <input
-                          onChange={this.handleChange}
-                          value={this.state.gender}
-                          type="text"
-                          class="form-control"
-                          name="gender"
-                          placeholder="Gender"
-                          required
-                        ></input>
-                      </div>
-                    </p>
-                    <p class="d-flex justify-content-center"></p>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text create-title">
-                      <div class="input-group">
-                        <input
-                          onChange={this.handleChange}
-                          value={this.state.age}
-                          type="number"
-                          class="form-control"
-                          name="age"
-                          placeholder="Age"
-                          required
-                        ></input>
-                      </div>
-                    </p>
-                    <br />
-                    <b>Result: </b>
+            <div
+              class="container justify-content-center"
+              style={{ width: "100%", paddingTop: "60px" }}
+            >
+              {getSessionCookie().computingID ? (
+                <div>
+                  <div
+                    class="card shadow"
+                    style={{ width: "100%", "margin-top": "10px" }}
+                  >
+                    <b>Vote For Your Prof:</b>
                     {display}
-                    <p class="d-flex justify-content-center"></p>
                   </div>
                 </div>
-              </div>
-              <Button
-                class="shadow-sm"
-                style={{
-                  backgroundColor: "#b48300",
-                  borderColor: "#b48300",
-                }}
-                type="Submi"
-                // onClick={this.handleSubmit}
-              >
-                Submit
-              </Button>
-            </Form>
+              ) : (
+                <div>Please Login</div>
+              )}
+            </div>
           </div>
         ) : (
           <div>Please Login</div>

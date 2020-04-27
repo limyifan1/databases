@@ -67,7 +67,7 @@ export class Login extends React.Component {
           });
           console.log(getSessionCookie());
           this.props.history.push({
-            pathname: "/",
+            pathname: "/profile",
           });
           alert("logged in");
         } else {

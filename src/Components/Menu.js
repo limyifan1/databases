@@ -36,6 +36,15 @@ export class Menu extends React.Component {
           <Nav.Link
             href="#"
             as={Link}
+            to="/create"
+            id="menu-link"
+            style={{ color: "grey" }}
+          >
+            Create
+          </Nav.Link>
+          <Nav.Link
+            href="#"
+            as={Link}
             to="/login"
             id="menu-link"
             style={{ color: "grey" }}
