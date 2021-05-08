@@ -19,7 +19,7 @@
     "firebase-functions": "^3.3.0",
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.2.25"
   },
   "devDependencies": {
     "tslint": "^5.12.0",
